@@ -7,13 +7,43 @@
 //
 
 #include <stdio.h>
+#include "c_queue.c"
+
+void producer(void* d)
+{
+    
+}
+
+int consumer()
+{
+    int d = 0;
+    
+    return d;
+}
 
 
 int main(int argc, const char * argv[])
 {
+    // Check input args
+	if (argc != 1)
+    {
+		printf("Usage: %s <num threads>\n",
+               argv[0]);
+		exit(EXIT_FAILURE);
+	}
+    
+    int n_thread = atoi(argv[1]);
+    
+    pthread_t threads[n_thread];
+    
+    for (int i = 0; i < n_thread; ++i) {
+        if (pthread_create(&threads[i], NULL,
+                           &producer, NULL)) {
+            printf("Could not create threads\n");
+            exit(EXIT_FAILURE);
+        }
+    }
 
-    // insert code here...
-    printf("Hello, World!\n");
     return 0;
 }
 
