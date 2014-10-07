@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include "list.c"
+#include "list.h"
 
 typedef struct queue_t
 {
