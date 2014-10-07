@@ -10,6 +10,7 @@
 		6D631A3C19E45ECB001C73F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D631A3B19E45ECB001C73F8 /* main.c */; };
 		6D631A3E19E45ECB001C73F8 /* concurr_queue.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D631A3D19E45ECB001C73F8 /* concurr_queue.1 */; };
 		6D631A4519E45F67001C73F8 /* c_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D631A4419E45F67001C73F8 /* c_queue.c */; };
+		6D631A4819E461FD001C73F8 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D631A4619E461FD001C73F8 /* list.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		6D631A3B19E45ECB001C73F8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6D631A3D19E45ECB001C73F8 /* concurr_queue.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = concurr_queue.1; sourceTree = "<group>"; };
 		6D631A4419E45F67001C73F8 /* c_queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = c_queue.c; sourceTree = "<group>"; };
+		6D631A4619E461FD001C73F8 /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		6D631A4719E461FD001C73F8 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 		6D631A3A19E45ECB001C73F8 /* concurr_queue */ = {
 			isa = PBXGroup;
 			children = (
+				6D631A4619E461FD001C73F8 /* list.c */,
+				6D631A4719E461FD001C73F8 /* list.h */,
 				6D631A3B19E45ECB001C73F8 /* main.c */,
 				6D631A4419E45F67001C73F8 /* c_queue.c */,
 				6D631A3D19E45ECB001C73F8 /* concurr_queue.1 */,
@@ -120,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D631A4819E461FD001C73F8 /* list.c in Sources */,
 				6D631A3C19E45ECB001C73F8 /* main.c in Sources */,
 				6D631A4519E45F67001C73F8 /* c_queue.c in Sources */,
 			);
