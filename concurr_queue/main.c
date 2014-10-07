@@ -9,16 +9,19 @@
 #include <stdio.h>
 #include "c_queue.c"
 
-void producer(void* d)
+void *producer(void *ptr)
 {
     
+    return NULL;
 }
 
-int consumer()
+void *consumer(void *ptr)
 {
     int d = 0;
     
-    return d;
+    
+    
+    return NULL;
 }
 
 
@@ -37,8 +40,7 @@ int main(int argc, const char * argv[])
     pthread_t threads[n_thread];
     
     for (int i = 0; i < n_thread; ++i) {
-        if (pthread_create(&threads[i], NULL,
-                           &producer, NULL)) {
+        if (pthread_create(&threads[i], NULL, &producer, NULL)) {
             printf("Could not create threads\n");
             exit(EXIT_FAILURE);
         }
